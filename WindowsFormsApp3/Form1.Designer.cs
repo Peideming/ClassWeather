@@ -34,13 +34,14 @@
             this.btnGetWeather2 = new MaterialSkin.Controls.MaterialButton();
             this.btSpeek = new MaterialSkin.Controls.MaterialButton();
             this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
+            this.materialButton2 = new MaterialSkin.Controls.MaterialButton();
             this.SuspendLayout();
             // 
             // lblShow
             // 
             this.lblShow.AutoSize = true;
             this.lblShow.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblShow.Location = new System.Drawing.Point(113, 140);
+            this.lblShow.Location = new System.Drawing.Point(73, 121);
             this.lblShow.Name = "lblShow";
             this.lblShow.Size = new System.Drawing.Size(464, 31);
             this.lblShow.TabIndex = 2;
@@ -52,7 +53,7 @@
             this.linkTittle.AutoSize = true;
             this.linkTittle.Font = new System.Drawing.Font("微软雅黑", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.linkTittle.LinkColor = System.Drawing.SystemColors.MenuHighlight;
-            this.linkTittle.Location = new System.Drawing.Point(115, 87);
+            this.linkTittle.Location = new System.Drawing.Point(71, 54);
             this.linkTittle.Name = "linkTittle";
             this.linkTittle.Size = new System.Drawing.Size(160, 46);
             this.linkTittle.TabIndex = 3;
@@ -110,7 +111,7 @@
             this.materialButton1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.materialButton1.HighEmphasis = true;
             this.materialButton1.Icon = null;
-            this.materialButton1.Location = new System.Drawing.Point(644, 183);
+            this.materialButton1.Location = new System.Drawing.Point(644, 231);
             this.materialButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton1.Name = "materialButton1";
@@ -123,12 +124,34 @@
             this.materialButton1.UseVisualStyleBackColor = true;
             this.materialButton1.Click += new System.EventHandler(this.OpenAbout_Click);
             // 
+            // materialButton2
+            // 
+            this.materialButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton2.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton2.Depth = 0;
+            this.materialButton2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.materialButton2.HighEmphasis = true;
+            this.materialButton2.Icon = null;
+            this.materialButton2.Location = new System.Drawing.Point(632, 183);
+            this.materialButton2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton2.Name = "materialButton2";
+            this.materialButton2.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton2.Size = new System.Drawing.Size(109, 36);
+            this.materialButton2.TabIndex = 7;
+            this.materialButton2.Text = "未来7天预报";
+            this.materialButton2.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton2.UseAccentColor = false;
+            this.materialButton2.UseVisualStyleBackColor = true;
+            this.materialButton2.Click += new System.EventHandler(this.Open7Days_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(833, 477);
+            this.Controls.Add(this.materialButton2);
             this.Controls.Add(this.materialButton1);
             this.Controls.Add(this.btSpeek);
             this.Controls.Add(this.btnGetWeather2);
@@ -151,6 +174,7 @@
         private MaterialSkin.Controls.MaterialButton btnGetWeather2;
         private MaterialSkin.Controls.MaterialButton btSpeek;
         private MaterialSkin.Controls.MaterialButton materialButton1;
+        private MaterialSkin.Controls.MaterialButton materialButton2;
     }
 }
 

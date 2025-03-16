@@ -97,6 +97,15 @@ namespace WindowsFormsApp3
             form2.Show();
         }
 
+        private void Open7Days_Click(object sender, EventArgs e)
+        {
+            // 创建 Form3 的实例
+            days7Form3 form3 = new days7Form3();
+
+            // 显示 Form3
+            form3.Show();
+        }
+
         private void SpeakWeather(string weatherText)
         {
             using (SpeechSynthesizer synthesizer = new SpeechSynthesizer())
